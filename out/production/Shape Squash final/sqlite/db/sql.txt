@@ -1,0 +1,10 @@
+https://sqliteonline.com/
+
+CREATE TABLE Scores (
+    Id INTEGER PRIMARY KEY AUTOINCREMENT ,
+    Score INTEGER NOT NULL CHECK (Score>=0),
+    Name VARCHAR(255) NOT NULL CHECK (NAME!='')
+);
+
+INSERT INTO Scores VALUES (NULL, 100, 'Francis Gregorio'), (NULL, 101, 'Genrev Zapa'), (NULL, 102, 'Mark Unida'), (NULL, 102, 'Aimee Conales');
+SELECT * FROM Scores ORDER BY Score DESC, Id ASC;
